@@ -1,0 +1,256 @@
+@media (max-width: 1200px) {
+  .header {
+    &__content-title {
+      font-size: 77px;
+      line-height: 90px;
+    }
+  }
+  .products {
+    &__top,
+    &__bottom {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    &__top-item {
+      width: 360px;
+      margin-bottom: 45px;
+      margin: 15px;
+    }
+    &__top-image {
+      height: 273px;
+    }
+    &__top-img {
+      width: 250px;
+      height: auto;
+    }
+    &__bottom {
+      margin-bottom: 20px;
+    }
+    &__bottom-item {
+      margin: 15px;
+    }
+  }
+}
+
+@media (max-width: 1130px) {
+  .benefit {
+    &__list {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    &__item {
+      margin: 15px;
+    }
+  }
+  .dog-care {
+    &__content {
+      padding: 30px 10px;
+      max-width: 100%;
+    }
+    &__image {
+      display: none;
+    }
+  }
+  .sub {
+    padding: 60px 0;
+    &__list {
+      display: block;
+    }
+    &__item {
+      display: flex;
+      align-items: center;
+      max-width: 100%;
+      justify-content: center;
+    }
+    &__item-content {
+      max-width: 500px;
+      padding: 0 30px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .header {
+    &__content-title {
+      font-size: 75px;
+      line-height: 80px;
+    }
+  }
+  .galery {
+    padding-bottom: 60px;
+    &__inner {
+      justify-content: center;
+    }
+    &__right {
+      display: none;
+    }
+    &__left {
+      margin-right: 0;
+    }
+  }
+}
+
+@media (max-width: 820px) {
+  .header {
+    &__content {
+      padding: 60px 0;
+    }
+  }
+  .menu {
+    &__list {
+      transform: translateY(-200%);
+      position: absolute;
+      top: 120px;
+      width: 100%;
+      left: 0;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      background-color: #FCF2EB;
+      z-index: 10;
+      transition: all .3s;
+      opacity: 95%;
+      &.menu__list--active {
+        transform: translateY(-20%);
+        transition: all .3s;
+      }
+    }
+    &__item+.menu__item {
+      margin-left: 0;
+    }
+    &__item {
+       width: 100%;
+       padding: 15px 0;
+    }
+    &__link {
+      padding: 0 15px;
+      display: block;
+      padding-bottom: 5px;
+    }
+  }
+  .user-nav {
+    &__btn {
+      display: block;
+    }
+  }
+  .benefit {
+    padding: 60px 0;
+  }
+  .sub {
+    &__item {
+      margin-bottom: 0px;
+    }
+  }
+}
+
+@media (max-width: 770px) {
+  .header {
+    &__content-title {
+      font-size: 55px;
+      line-height: 55px;
+    }
+  }
+}
+
+@media (max-width: 620px) {
+  .sub {
+    &__item-content {
+      max-width: 100%;
+      padding: 0 10px;
+    }
+
+    &__item {
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__item-img {
+      margin-bottom: 25px;
+      width: 130px;
+      height: auto;
+    }
+  }
+  .galery {
+    &__left-item {
+       width: 200px;
+       margin: 0 auto;
+    }
+  }
+}
+
+@media (max-width: 510px) {
+  .header {
+    &__bottom {
+      flex-direction: column;
+    }
+    &__image {
+      display: block;
+      margin-right: 0;
+      margin-left: auto;
+    }
+    &__img {
+      width: 135px;
+    }
+    &__content {
+      padding: 25px 0;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .galery {
+    &__left-box {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    &__left-item {
+      width: 100%;
+    }
+  }
+}
+
+
+@media (max-width: 390px) {
+  .header {
+    &__content-title {
+      font-size: 43px;
+      line-height: 40px;
+    }
+    &__img {
+      width: 90px;
+    }
+  }
+  .benefit {
+    &__item-title {
+      font-size: 19px;
+      line-height: 30px;
+    }
+  }
+  .products {
+    &__top-item,
+    &__bottom-item {
+      width: 360px;
+    }
+    &__top-image,
+    &__bottom-image {
+      height: 230px;
+    }
+    &__top-img,
+    &__bottom-img {
+      width: 220px; 
+    }
+  }
+  .dog-care {
+    &__title {
+      font-size: 26px;
+      line-height: 32px;
+    }
+    &__btn {
+      margin-bottom: 15px;
+    }
+    &__link {
+      display: block;
+      max-width: 120px;
+    }
+  }
+}
