@@ -59,7 +59,6 @@
   padding-top: 100px;
 }
 
-
 .logo {
   display: flex;
   align-items: center;
@@ -173,6 +172,8 @@
 }
 
 .products {
+   padding-top: 100px;
+   margin-top: -100px;
   &__title {
     margin-bottom: 18px;
   }
@@ -259,6 +260,9 @@
 }
 
 .dog-care {
+  padding-top: 100px;
+  margin-top: -100px;
+  padding-bottom: 80px;
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -296,7 +300,12 @@
 } 
 
 .sub {
-  padding: 85px 0 120px;
+  padding: 35px 0 120px;
+  padding-top: 0;
+  &__inner {
+    padding-top: 130px;
+    margin-top: -130px;
+  }
   &__title {
     max-width: 505px;
     margin: 0 auto;
@@ -340,6 +349,8 @@
 
 .galery {
   padding-bottom: 120px;
+   padding-top: 150px;
+   margin-top: -150px;
   &__inner {
     display: flex;
     justify-content: space-between;
