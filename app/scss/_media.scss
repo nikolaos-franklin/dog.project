@@ -67,6 +67,12 @@
       padding: 0 30px;
     }
   }
+  .form-message {
+    &__inner {
+      flex-direction: column;
+      padding: 30px 0;
+    }
+  }
 }
 
 @media (max-width: 992px) {
@@ -150,6 +156,46 @@
       line-height: 55px;
     }
   }
+  .footer {
+    padding-bottom: 60px;
+    &__list {
+      flex-direction: column;
+    }
+    &__box {
+      order: -2;
+    }
+    &__logo {
+      padding-top: 50px;
+      margin-bottom: 30px;
+    }
+    &__list-left,
+    &__list-right {
+      margin-top: 30px;
+      text-align: center;
+    }
+  }
+  .reviews {
+    &__slider-arrows {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &__slider-arrow--top,
+    &__slider-arrow--down {
+    transform: rotate(90deg);
+    top: 280px;
+    right: 270px;
+  }
+  &__slider-arrow--down {
+    right: 315px;
+    top: 281px;
+  }
+  .slick-arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+ }
 }
 
 @media (max-width: 620px) {
@@ -175,6 +221,73 @@
     &__left-item {
        width: 200px;
        margin: 0 auto;
+    }
+  }
+  .form-message {
+    &__inner {
+      padding-bottom: 30px;
+      background-size: cover;
+      height: 385px;
+      display: block;
+      background-position: bottom;
+    }
+    &__content {
+      padding: 0 10px;
+      margin: 0 auto;
+      margin-bottom: 10px;
+    }
+    &__form {
+      width: 100%;
+      padding: 0 15px;
+    }
+    &__input {
+      margin-bottom: 10px;
+      border-radius: 10px 10px 10px 10px;
+      width: 100%;
+    }
+    &__btn {
+      border-radius: 10px 10px 10px 10px;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  .reviews {
+    &__box {
+      width: 260px;
+      height: 400px;
+    }
+    &__box-item {
+      width: 100%;
+      height: 100%;
+    }
+    &__comment {
+      width: 260px !important;
+      height: 400px;
+      margin: auto;
+    }
+    &__slider {
+      width: 285px !important;
+      height: 405px;
+    }
+    .slick-slide {
+      width: 260px !important;
+      margin: 0 auto;
+    }
+  }
+  .reviews {
+    &__slider-arrow--top,
+    &__slider-arrow--down {
+      transform: rotate(90deg);
+      bottom: -160px;
+      right: 20px;
+    }
+
+    &__slider-arrow--down {
+      right: 225px;
+      bottom: -160px;
+    }
+    &__box-item {
+      display: none;
     }
   }
 }
@@ -251,6 +364,11 @@
     &__link {
       display: block;
       max-width: 120px;
+    }
+  }
+  .form-message {
+    &__inner {
+      height: 460px;
     }
   }
 }
