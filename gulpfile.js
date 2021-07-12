@@ -5,6 +5,7 @@ const concat           = require('gulp-concat');
 const autoprefixer     = require('gulp-autoprefixer');
 const uglify           = require('gulp-uglify');
 const imagemin         = require('gulp-imagemin');
+// const rename          = require('gulp-rename');
 const del              = require('del');
 const browserSync      = require('browser-sync').create();
 
@@ -23,13 +24,16 @@ function browsersync() {
 function styles() {
   return src('app/scss/*.scss') //находит все scss файлы, кроме тех, кто с нижним подчеркиванием
   .pipe(scss({outputStyle: 'compressed'})) // сжал
-  // .pipe(concat())
+  // .pipe(rename({
+  //   suffix: '.min'
+  // }))
+  .pipe(concat('style.min.css'))
   .pipe(autoprefixer({
     overrideBrowserslist: ['last 10 versions'],
     grid: true
   }))
   .pipe(dest('app/css'))
-  .pipe(browserSync.stream())
+  .pipe(browserSync.stream());
 }
 
 function scripts(){ 
@@ -79,7 +83,6 @@ function cleanDist() {
   return del('dist')
 }
 
-
 exports.styles = styles;
 exports.scripts = scripts;
 exports.browsersync = browsersync;
@@ -89,5 +92,5 @@ exports.cleanDist = cleanDist;
 exports.build = series(cleanDist, images, build);
 
 
-exports.default = parallel( styles, scripts, browsersync, watching); //выполняется по дефолту
+exports.default = parallel(styles, scripts, browsersync, watching); //выполняется по дефолту
 
