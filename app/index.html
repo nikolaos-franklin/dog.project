@@ -55,13 +55,38 @@
           <div class="header__content-title">
             Собака - мой второй пилот
           </div>
-          <button class="header__content-btn" type="button">
+          <button class="header__content-btn" id="myBtn" type="button">
             Купить
           </button>
           <a class="header__content-link" href="#">
             Детали
           </a>
         </div>
+        
+        <div class="modal" id="myModal">
+          <div class="modal__body">
+          <div class="modal__content">
+            <span class="close">&times;</span>
+            <div class="form-popup">
+              <form class="form-popup__container">
+                <h1 class="form-popup__title">Заполните форму:</h1>
+
+                <label><b>Имя</b></label>
+                <input type="text" placeholder="Ваше имя" required>
+
+                 <label><b>Номер</b></label>
+                 <input type="tel" placeholder="Введите номер" required>
+
+                <label for="email"><b>Почта</b></label>
+                <input type="text" placeholder="Введите почту" name="email" required>
+
+                <button class="form-popup__btn" type="submit" class="btn">Отправить</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        </div>
+
         <div class="header__image">
           <img class="header__img" src="images/header-img.png" alt="Собакен">
         </div>
