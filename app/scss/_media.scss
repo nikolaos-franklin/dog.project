@@ -264,6 +264,10 @@
       width: 260px !important;
       height: 400px;
       margin: auto;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
     }
     &__slider {
       width: 285px !important;
