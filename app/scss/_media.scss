@@ -126,7 +126,7 @@
     &__list {
       transform: translateY(-200%);
       position: absolute;
-      top: 120px;
+      top: 0px;
       width: 100%;
       left: 0;
       flex-direction: column;
@@ -134,12 +134,14 @@
       text-align: center;
       background-color: #FCF2EB;
       z-index: 10;
-      transition: all .3s;
-      opacity: 95%;
+      opacity: 90%;
+      min-height: 100vh;
+      transition: all .5s ease-in;
 
       &.menu__list--active {
-        transform: translateY(-20%);
-        transition: all .3s;
+        transform: translateY(0%);
+        transition: all 1s;
+        min-height: 100vh;
       }
     }
 
@@ -149,7 +151,8 @@
 
     &__item {
       width: 100%;
-      padding: 15px 0;
+      padding: 25px 0;
+      font-size: 25px;
     }
 
     &__link {
@@ -173,6 +176,9 @@
     &__item {
       margin-bottom: 0px;
     }
+  }
+  .logo {
+    z-index: 11;
   }
 }
 
