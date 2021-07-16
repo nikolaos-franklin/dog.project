@@ -303,11 +303,17 @@
     align-items: center;
     height: 420px;
     margin-bottom: 25px;
+    overflow: hidden;
   }
 
   &__top-img {
     width: 350px;
     height: auto;
+    transition: 1s; 
+    display: block;
+    &:hover {
+        transform: scale(1.2);
+    }
   }
 
   &__top-content {
@@ -351,11 +357,17 @@
     align-items: center;
     height: 273px;
     margin-bottom: 23px;
+    overflow: hidden;
   }
 
   &__bottom-img {
     width: 250px;
     height: auto;
+    display: block;
+    transition: 1s;
+    &:hover {
+      transform: scale(1.2);
+    }
   }
 
   &__links {
